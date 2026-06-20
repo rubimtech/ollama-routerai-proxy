@@ -1,0 +1,9 @@
+services:
+  enchanted-ollama-proxy:
+    environment:
+      OPENAI_BASE_URL: "https://routerai.ru/api/v1"
+      OPENAI_API_KEY: "sk-i-"
+    build: .
+    ports:
+      - "11436:11436"
+    restart: unless-stopped
